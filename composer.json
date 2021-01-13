@@ -1,0 +1,41 @@
+{
+  "name": "jmvdevelop/psalm-glob-stubs-plugin",
+  "description": "Allow stubs with glob in your project",
+  "keywords": [
+    "php",
+    "code",
+    "inspection",
+    "psalm",
+    "plugin",
+    "psalm-plugin",
+    "static analysis",
+    "static-analysis",
+    "extension",
+    "stubs",
+    "globs"
+  ],
+  "type": "psalm-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Joseph Maarek",
+      "email": "josephmaarek@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2|^8",
+    "ext-simplexml": "*",
+    "vimeo/psalm": "~4.3.1",
+    "symfony/finder": "~4|~5"
+  },
+  "extra": {
+    "psalm": {
+      "pluginClass": "JmvDevelop\\PsalmGlobStubsPlugin\\Plugin"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "JmvDevelop\\PsalmGlobStubsPlugin\\": "src"
+    }
+  }
+}
